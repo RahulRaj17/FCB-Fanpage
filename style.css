@@ -1,0 +1,275 @@
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+li,
+button,
+input,
+label {
+  font-size: 2.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+button {
+  padding: 2rem 6rem;
+  border: none;
+  background-color: #004c99;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #001f3d;
+}
+
+/* Navigation Bar */
+
+nav img {
+  max-width: 3%;
+  margin-right: 2rem;
+}
+
+.nav-head {
+  background-color: #004c99;
+  color: white;
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/img/pexels-mario-cuadros-2413089\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffee00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* City */
+
+#city {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url(/img/new-york-page.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.city-head {
+  width: 90%;
+  margin: auto;
+}
+
+.city-head h2 {
+  text-decoration: underline;
+  font-weight: none;
+  padding: 2rem 0;
+  font-weight: normal;
+}
+
+.city-head h3 {
+  font-weight: normal;
+}
+
+.moving-cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+  opacity: 0.7;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Achievements */
+
+.achievements-head {
+  min-height: 10vh;
+  background-color: #004c99;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.card-icon {
+  background-color: #0381ff;
+}
+
+.card-icon img {
+  max-width: 15%;
+  padding: 2rem 0;
+}
+
+.card {
+  margin: 2rem 3rem;
+  flex: 1 1 25px;
+  text-align: center;
+  min-height: 40vh;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.card h3 {
+  padding: 2rem 0;
+}
+
+/* Contact Us */
+
+#contact {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/pexels-lina-kivaka-2253916.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.name-form,
+.email-form {
+  text-align: center;
+  padding: 3rem;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 5rem;
+}
+
+.form-wrapper input {
+  width: 50%;
+  padding: 1rem 2rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: #001f3d;
+  color: white;
+}
+
+.footer-wrapper {
+  min-height: 10vh;
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.footer-wrapper h1 {
+  flex: 1 1 40rem;
+}
+
+.footer-wrapper ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+  align-items: center;
+  list-style: none;
+}

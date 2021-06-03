@@ -73,6 +73,7 @@ nav {
   padding: 2rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #logo {
@@ -176,6 +177,7 @@ nav ul {
   align-items: center;
   width: 90%;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .card-icon {
@@ -260,6 +262,7 @@ footer {
   width: 90%;
   margin: auto;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-wrapper h1 {
@@ -272,4 +275,37 @@ footer {
   flex: 1 1 40rem;
   align-items: center;
   list-style: none;
+}
+
+/* Media Query */
+
+@media (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  nav img {
+    display: none;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .moving-cloud {
+    display: none;
+  }
+  .city-head h3 {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .footer-wrapper h1 {
+    padding-bottom: 2rem;
+  }
+  .footer-wrapper {
+    text-align: center;
+  }
 }
